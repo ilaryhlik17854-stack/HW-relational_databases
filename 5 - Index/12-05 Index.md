@@ -55,4 +55,4 @@ WHERE p.payment_date >= '2005-07-30 00:00:00' AND p.payment_date < '2005-07-31 0
 
 ### после
 
-![12-05-03](https://github.com/ilaryhlik17854-stack/HW-relational_databases/blob/main/5%20-%20Index/img/12-05-03.png?raw=true)
+![12-05-03](https://github.com/ilaryhlik17854-stack/HW-relational_databases/blob/main/5%20-%20Index/img/15-05-03.png?raw=true)
