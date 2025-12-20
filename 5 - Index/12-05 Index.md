@@ -1,4 +1,3 @@
-# Домашнее задание к занятию «Индексы»
 # Домашнее задание к занятию «Индексы» - `Рыхлик Илья Александрович`
 
 ---
@@ -9,9 +8,11 @@
 
 ## Решение 1
 ```
-SELECT SUM(data_length) AS SUM_Data_Length, SUM(index_length) AS SUM_Index_Length, CONCAT(ROUND ((SUM(index_length)*100.0/SUM(data_length)))) AS `% Отношение`
-FROM information_schema.tables
-WHERE table_schema='sakila' AND data_length IS NOT NULL;
+SELECT 
+	ROUND(SUM(data_length) / (SUM(data_length) + SUM(index_length)) * 100, 2) AS `table_%`,
+	ROUND(SUM(index_length) / (SUM(data_length) + SUM(index_length)) * 100, 2) AS `index_%`
+FROM
+	information_schema.tables;
 ```
 ![12-05-01](https://github.com/ilaryhlik17854-stack/HW-relational_databases/blob/main/5%20-%20Index/img/12-05-01.png?raw=true)
 
