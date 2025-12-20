@@ -20,7 +20,7 @@ JOIN address a ON s.address_id = a.address_id
 GROUP BY c.store_id 
 HAVING COUNT(c.store_id) > 300;
 ```
-![12-04-01]()
+![12-04-01](https://github.com/ilaryhlik17854-stack/HW-relational_databases/blob/main/4%20-%20SQL%20Part%202/img/12-04-01.png?raw=true)
 
 --- 
 
@@ -35,7 +35,7 @@ SELECT COUNT(*) AS `Кол-во фильмов с продолжительнос
 	FROM film 
 	WHERE length > (SELECT AVG(length) FROM film);
 ```
-![12-04-02]()
+![12-04-02](https://github.com/ilaryhlik17854-stack/HW-relational_databases/blob/main/4%20-%20SQL%20Part%202/img/12-04-02.png?raw=true)
 
 ---
 
@@ -51,7 +51,7 @@ SELECT MONTH(payment_date) AS `Месяц`, COUNT(payment_id) As `Кол-во а
 	GROUP BY MONTH(payment_date) 
 	ORDER BY COUNT(payment_id)  DESC LIMIT 1 ;
 ```
-![12-04-03]()
+![12-04-03](https://github.com/ilaryhlik17854-stack/HW-relational_databases/blob/main/4%20-%20SQL%20Part%202/img/12-04-03.png?raw=true)
 
 ---
 
@@ -72,7 +72,7 @@ JOIN staff s ON p.staff_id = s.staff_id
 GROUP BY p.staff_id;
 ```
 
-![12-04-04]()
+![12-04-04](https://github.com/ilaryhlik17854-stack/HW-relational_databases/blob/main/4%20-%20SQL%20Part%202/img/12-04-04.png?raw=true)
 
 ---
 
@@ -89,4 +89,4 @@ SELECT f.title AS 'Без Продаж'
 	LEFT JOIN rental r ON i.inventory_id = r.inventory_id
 	WHERE r.inventory_id IS NULL;
 ```
-![12-04-05]()
+![12-04-05](https://github.com/ilaryhlik17854-stack/HW-relational_databases/blob/main/4%20-%20SQL%20Part%202/img/12-04-05.png?raw=true)
