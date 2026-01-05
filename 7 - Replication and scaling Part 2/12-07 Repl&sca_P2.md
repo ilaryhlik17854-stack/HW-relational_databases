@@ -51,7 +51,7 @@
 
 Базы данных:
 <!-- TABLE_GENERATE_START -->
-|    Users()     |     books     |      shops     |
+|    Users       |     books     |      shops     |
 | (Пользователи) |    (Книги)    |    (Магазины)  |
 | -------------  | ------------- | -------------- |
 | user_id(prim)  | book_id(prim) |  shop_id(prim) |
