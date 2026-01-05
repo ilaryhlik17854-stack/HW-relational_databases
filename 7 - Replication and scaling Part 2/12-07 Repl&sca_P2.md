@@ -47,11 +47,17 @@
 
 ## Решение 2
 
+План горизонтального и вертикального шардинга базы данных
+
+Базы данных:
 <!-- TABLE_GENERATE_START -->
-
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
+|    Users()     |     books     |      shops     |
+| (Пользователи) |    (Книги)    |    (Магазины)  |
+| -------------  | ------------- | -------------- |
+| user_id(prim)  | book_id(prim) |  shop_id(prim) |
+|  first_name    |     title     |      city      |
+|   last_name    |    author     |     address    |
+|     email      |     price     |     meneger    |
+|     phone      |               |                |
+|    book_id     |               |                |
 <!-- TABLE_GENERATE_END -->
